@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ControllerNR
+public class ControllerDPSM
 {
     @SuppressWarnings("Duplicates")
     @FXML

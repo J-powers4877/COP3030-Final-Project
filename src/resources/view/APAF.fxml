@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.controller.ControllerAPAF">
+    <children>
+        <Label layoutX="776.0" layoutY="435.0" text="All Passengers All Flights"/>
+        <Button layoutX="781.0" layoutY="841.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu"/>
+    </children>
+</AnchorPane>

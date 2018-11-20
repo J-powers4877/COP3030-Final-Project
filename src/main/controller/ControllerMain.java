@@ -2,8 +2,14 @@ package main.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class ControllerMain
 {
@@ -30,39 +36,75 @@ public class ControllerMain
     private Button dpsmButton;
 
     @FXML
-    void loadNF(ActionEvent event)
+    void loadNF(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/NF.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
-    void loadNR(ActionEvent event)
+    void loadNR(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/NR.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
-    void loadDPSM(ActionEvent event)
+    void loadDPSM(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/DPSM.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
-    void loadAF(ActionEvent event)
+    void loadAF(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/AF.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
-    void loadLAPAF(ActionEvent event)
+    void loadLAPAF(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/APAF.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
-    void loadLAPSF(ActionEvent event)
+    void loadLAPSF(ActionEvent event) throws IOException
     {
+        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/APSF.fxml"));
+        Scene scene = new Scene(newView);
 
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(scene);
+        window.show();
     }
 
     @FXML
@@ -73,30 +115,3 @@ public class ControllerMain
     }
 
 }
-
-
-/*public class ControllerMain {
-
-    @FXML
-    private AnchorPane rootPane;
-
-    private Stage mStage;
-
-    public void setStage(Stage mStage)
-    {
-        this.mStage = mStage;
-    }
-
-    @FXML
-    void loadSecond(ActionEvent event) throws IOException
-    {
-        Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/Two.fxml"));
-        Scene scene = new Scene(newView);
-
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-
-        window.setScene(scene);
-        window.show();
-    }
-
-}*/
