@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+          minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8" fx:controller="main.controller.ControllerMain">
+    <columnConstraints>
+        <ColumnConstraints minWidth="10.0" prefWidth="360.0"/>
+        <ColumnConstraints minWidth="10.0" prefWidth="360.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label alignment="CENTER" text="Main Menu" GridPane.columnSpan="2" GridPane.halignment="CENTER"
+               GridPane.valignment="CENTER"/>
+        <Button fx:id="nfButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#loadNF" text="Add a new flight" GridPane.rowIndex="1"/>
+        <Button fx:id="nrButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#loadNR" text="Make a new reservation" GridPane.columnIndex="1"
+                GridPane.rowIndex="1"/>
+        <Button fx:id="dpsmButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#loadDPSM" text="Display passengers seat map" GridPane.rowIndex="2"/>
+        <Button fx:id="afButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#loadAF" text="List all flights" GridPane.columnIndex="1"
+                GridPane.rowIndex="2"/>
+        <Button fx:id="lapafButton" contentDisplay="CENTER" maxHeight="1.7976931348623157E308"
+                maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#loadLAPAF"
+                text="List all passengers reservations for all flights" textAlignment="CENTER" wrapText="true"
+                GridPane.rowIndex="3" GridPane.valignment="CENTER"/>
+        <Button fx:id="lapsfButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                mnemonicParsing="false" onAction="#loadLAPSF"
+                text="List all passengers reservations for specific flights" textAlignment="CENTER" wrapText="true"
+                GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button fx:id="exitButton" maxHeight="0.0" maxWidth="180.0" mnemonicParsing="false" onAction="#exitProgram"
+                text="Exit" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4"
+                GridPane.valignment="CENTER"/>
+    </children>
+    <padding>
+        <Insets bottom="14.0" left="14.0" right="14.0" top="14.0"/>
+    </padding>
+</GridPane>
