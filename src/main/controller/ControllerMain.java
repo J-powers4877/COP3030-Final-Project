@@ -18,24 +18,6 @@ public class ControllerMain
     private Button exitButton;
 
     @FXML
-    private Button afButton;
-
-    @FXML
-    private Button lapafButton;
-
-    @FXML
-    private Button nrButton;
-
-    @FXML
-    private Button nfButton;
-
-    @FXML
-    private Button lapsfButton;
-
-    @FXML
-    private Button dpsmButton;
-
-    @FXML
     void loadNF(ActionEvent event) throws IOException
     {
         Parent newView = FXMLLoader.load(getClass().getResource("/resources/view/NF.fxml"));
