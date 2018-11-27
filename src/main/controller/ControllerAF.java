@@ -26,11 +26,10 @@ public class ControllerAF implements Initializable
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         try
         {
-            String sTemp;
+            String sTemp = null;
             while ((sTemp = bufferedReader.readLine()) != null)
             {
-                sTemp = bufferedReader.readLine();
-                tfAllFlights.setText(sTemp);
+                tfAllFlights.appendText(sTemp + "\n");
             }
 
         } catch (IOException e)
