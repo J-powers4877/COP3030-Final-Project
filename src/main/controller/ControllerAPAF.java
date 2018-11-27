@@ -19,12 +19,15 @@ import java.util.ResourceBundle;
 
 public class ControllerAPAF implements Initializable
 {
-    @FXML
-    private TextArea tfAPAF;
 
+    @FXML
+    private TextArea taAPAF;
+
+    @SuppressWarnings("Duplicates")
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
+        taAPAF.clear();
         InputStream inputStream = this.getClass().getResourceAsStream("/resources/reservations.txt");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         try
@@ -32,7 +35,7 @@ public class ControllerAPAF implements Initializable
             String sTemp = null;
             while ((sTemp = bufferedReader.readLine()) != null)
             {
-                tfAPAF.appendText(sTemp + "\n");
+                taAPAF.appendText(sTemp + "\n");
             }
 
         } catch (IOException e)

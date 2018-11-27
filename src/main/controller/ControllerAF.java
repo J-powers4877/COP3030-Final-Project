@@ -19,6 +19,10 @@ import java.util.ResourceBundle;
 
 public class ControllerAF implements Initializable
 {
+    @FXML
+    private TextArea taAllFlights;
+
+    @SuppressWarnings("Duplicates")
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
@@ -29,7 +33,7 @@ public class ControllerAF implements Initializable
             String sTemp = null;
             while ((sTemp = bufferedReader.readLine()) != null)
             {
-                tfAllFlights.appendText(sTemp + "\n");
+                taAllFlights.appendText(sTemp + "\n");
             }
 
         } catch (IOException e)
@@ -37,9 +41,6 @@ public class ControllerAF implements Initializable
             e.printStackTrace();
         }
     }
-
-    @FXML
-    private TextArea tfAllFlights;
 
     @SuppressWarnings("Duplicates")
     @FXML
