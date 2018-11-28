@@ -10,7 +10,7 @@
         <Button layoutX="762.0" layoutY="861.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" />
         <TextArea fx:id="taAPAF" layoutX="118.0" layoutY="66.0" prefHeight="768.0" prefWidth="1366.0">
          <font>
-            <Font name="Monospaced Regular" size="12.0" />
+            <Font name="Monospaced Regular" size="18.0" />
          </font></TextArea>
     </children>
 </AnchorPane>

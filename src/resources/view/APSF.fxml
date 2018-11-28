@@ -3,19 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0"
-            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="main.controller.ControllerAPSF">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" fx:controller="main.controller.ControllerAPSF">
     <children>
-        <Button layoutX="733.0" layoutY="841.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu"/>
-        <TextArea fx:id="taAPSF" layoutX="14.0" layoutY="162.0" prefHeight="576.0" prefWidth="1024.0">
+        <Button layoutX="733.0" layoutY="841.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" />
+        <TextArea fx:id="taAPSF" editable="false" layoutX="14.0" layoutY="90.0" prefHeight="720.0" prefWidth="1280.0">
             <font>
-                <Font name="Monospaced Regular" size="21.0"/>
+                <Font name="Monospaced Regular" size="18.0" />
             </font>
         </TextArea>
-        <Button layoutX="1273.0" layoutY="294.0" mnemonicParsing="false" onAction="#findFlight" text="Search"/>
-        <TextField fx:id="tfFN" layoutX="1187.0" layoutY="237.0" promptText="Flight Number"/>
-        <Label layoutX="1170.0" layoutY="162.0"
-               text="Please enter the flight number&#10;of the flight you want to display" textAlignment="CENTER"/>
+        <Button layoutX="1424.0" layoutY="207.0" mnemonicParsing="false" onAction="#findFlight" text="Search" AnchorPane.rightAnchor="124.0" />
+        <TextField fx:id="tfFN" layoutX="1375.0" layoutY="158.0" promptText="Flight Number" AnchorPane.rightAnchor="76.0" />
+        <Label layoutX="1365.0" layoutY="103.0" text="Please enter the flight number&#10;of the flight you want to display" textAlignment="CENTER" AnchorPane.rightAnchor="66.0" />
     </children>
 </AnchorPane>
