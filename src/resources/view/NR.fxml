@@ -6,59 +6,66 @@
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" fx:controller="main.controller.ControllerNR">
     <children>
         <Button layoutX="762.0" layoutY="861.0" mnemonicParsing="false" onAction="#mainMenu" text="Main Menu" />
-      <GridPane hgap="8.0" layoutX="170.0" layoutY="118.0" prefHeight="182.0" prefWidth="311.0" vgap="8.0">
+      <GridPane hgap="8.0" layoutX="243.0" layoutY="228.0" prefHeight="72.0" prefWidth="311.0" vgap="8.0">
         <columnConstraints>
           <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
         </rowConstraints>
          <children>
             <Label text="Please Enter Flight Number:" />
-            <Label text="Enter Passenger ID:" GridPane.rowIndex="1" />
-            <Label text="Enter Passenger First Name:" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#displayFM" text="Continue" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#displayFM" text="Display Flight Map" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
             <TextField fx:id="tfFN" GridPane.columnIndex="1" />
-            <TextField fx:id="tfPID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField fx:id="tfPFN" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField fx:id="tfPLN" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Enter Passenger Last Name:" GridPane.rowIndex="3" />
          </children>
       </GridPane>
-      <TextArea fx:id="taFM" editable="false" layoutX="14.0" layoutY="408.0" prefHeight="432.0" prefWidth="768.0" />
-      <GridPane hgap="8.0" layoutX="1047.0" layoutY="142.0" prefHeight="135.0" prefWidth="311.0" vgap="8.0">
+      <TextArea fx:id="taFM" editable="false" layoutX="14.0" layoutY="408.0" prefHeight="432.0" prefWidth="768.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <GridPane hgap="8.0" layoutX="1030.0" layoutY="95.0" prefHeight="266.0" prefWidth="344.0" vgap="8.0">
         <columnConstraints>
-          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="129.0" minWidth="110.0" prefWidth="129.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="174.0" prefWidth="174.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="168.0" minWidth="110.0" prefWidth="159.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="154.0" prefWidth="163.0" />
         </columnConstraints>
         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Please Select A Row:" GridPane.halignment="RIGHT" />
-            <Label text="(Note: All X's spots are taken)" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <TextField fx:id="tfRN" GridPane.columnIndex="1" />
-            <Label text="Please Select A Seat:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#generateReservation" text="Generate Reservation" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-            <TextField fx:id="tfSN" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Please Select A Row:" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+            <Label text="(Note: All X's spots are taken)" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="tfRN" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Please Select A Seat:" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#generateReservation" text="Generate Reservation" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <TextField fx:id="tfSN" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Enter Passenger ID:" GridPane.rowIndex="2" />
+            <TextField fx:id="tfPID" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Enter Passenger Last Name:" GridPane.rowIndex="1" />
+            <TextField fx:id="tfPLN" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Enter Passenger First Name:" />
+            <TextField fx:id="tfPFN" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#confirmReservation" text="Confirm Reservation" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </GridPane>
-      <Label layoutX="297.0" layoutY="375.0" text="Flight Map" />
-      <TextArea fx:id="taRes" editable="false" layoutX="818.0" layoutY="408.0" prefHeight="432.0" prefWidth="768.0" />
-      <Label layoutX="1171.0" layoutY="375.0" text="Reservation" />
-      <Button layoutX="1136.0" layoutY="300.0" mnemonicParsing="false" onAction="#confirmReservation" text="Confirm Reservation">
+      <Label layoutX="370.0" layoutY="375.0" text="Flight Map" />
+      <TextArea fx:id="taRes" editable="false" layoutX="818.0" layoutY="408.0" prefHeight="432.0" prefWidth="768.0">
          <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
-      <Label layoutX="542.0" layoutY="60.0" text="To create a reservation, fill out the information to the left then fill out the information to the right." />
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <Label layoutX="1171.0" layoutY="375.0" text="Reservation" />
+      <Label layoutX="542.0" layoutY="14.0" text="To create a reservation, fill out the information to the left then fill out the information to the right." />
     </children>
 </AnchorPane>
