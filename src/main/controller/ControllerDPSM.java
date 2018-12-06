@@ -39,6 +39,8 @@ public class ControllerDPSM
                 taSM.appendText(sTemp + "\n");
             }
 
+            inputStream.close();
+            bufferedReader.close();
         } catch (IOException e)
         {
             e.printStackTrace();

@@ -25,6 +25,7 @@ import java.nio.file.Paths;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.stream.IntStream;
 
 public class ControllerNF implements Initializable
 {
@@ -42,6 +43,7 @@ public class ControllerNF implements Initializable
     private int iATHour;
     private int iDTMin;
     private int iATMin;
+
     @FXML
     private TextArea taFlightPreview;
     @FXML
@@ -205,10 +207,7 @@ public class ControllerNF implements Initializable
         sFlights.add(formatNoSpace());
         taFlightPreview.setText("Flight#   FDate      DTime   ATime    DepartCity      DestCity     AvailableSeats\n");
 
-        for(int i = 1; i < sFlights.size(); i++)
-        {
-            taFlightPreview.appendText(sFlights.get(i) + "\n");
-        }
+        IntStream.range(1, sFlights.size()).forEach(i -> taFlightPreview.appendText(sFlights.get(i) + "\n"));
 
         Path file = Paths.get("src/resources/flights.txt");
         try
