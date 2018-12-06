@@ -1,4 +1,4 @@
-1   A B   X D E   F G
+1   X B   X D E   F G
 2   A B   C D E   F G
 3   A B   C D E   F G
 4   A B   C D X   F G
