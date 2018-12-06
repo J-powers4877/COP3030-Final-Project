@@ -1,4 +1,9 @@
 ID              Name            SeatNumber    Flight#
 1035093287      George Eric         2A        AA1230
-E8742784        Tom Ed              1C        AA1140
+E8742783        Tom Ed              1C        AA1140
 1035027864      Sara Shafer         4E        AA1140
+E8742784        Justin Powers       2B        AA1230
+E8742785        Lukas Merklein      2C        AA1230
+E8742786        Emma Dibble         3B        AA1230
+E8742787        Tucker Storrs       2D        AA1230
+1035027865      John Jackob         1A        AA1140
