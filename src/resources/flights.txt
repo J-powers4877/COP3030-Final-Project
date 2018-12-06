@@ -2,3 +2,4 @@ Flight#   FDate      DTime   ATime    DepartCity      DestCity     AvailableSeat
 AA1150    20Dec15    23:00   02:00    FORT WAYNE      ORLANDO           70
 AA1230    5Nov15     11:30   14:00    BLACKSBURG      BOCA RATON        25
 AA1140    4Jan15     07:00   11:00    SEATTEL         PHONEIX           42
+AA1111    05Dec18    01:01   13:01    ORLANDO         FORT WAYNE        50        
